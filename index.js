@@ -3,7 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 import { ObjectId } from "mongodb";
 import { events, joins } from "./config/db.js";
-
+import { today, validateEvent, validId } from "./utils/validators.js";
 
 const app = express();
 const port = process.env.PORT || 5000;

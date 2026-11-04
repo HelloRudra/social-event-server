@@ -8,10 +8,11 @@
     "dev": "node --watch index.js"
   },
   "dependencies": {
-    "cors": "...",
-    "dotenv": "...",
-    "express": "...",
-    "jose": "...",
-    "mongodb": "..."
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "jose": "^6.2.15",
+    "mongodb": "^7.8.0",
+    "nodemon": "^3.1.14"
   }
 }

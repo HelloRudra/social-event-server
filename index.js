@@ -4,6 +4,9 @@ import "dotenv/config";
 import { ObjectId } from "mongodb";
 import { events, joins } from "./config/db.js";
 import { today, validateEvent, validId } from "./utils/validators.js";
+import { verifyJWT } from "./middleware/verifyJWT.js";
+
+
 
 const app = express();
 const port = process.env.PORT || 5000;

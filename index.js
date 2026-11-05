@@ -13,6 +13,7 @@ app.use(express.json());
 app.get("/", (req, res) => res.send({ message: "Social Events API is running" }));
 
 app.use(eventsRouter);
+app.use(joinsRouter);
 app.use((req, res) => {
   res.status(404).send({ message: "This route does not exist." });
 });

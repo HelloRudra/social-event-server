@@ -2,13 +2,13 @@
 
 REST API for the Social Development Events Platform, built with Express and MongoDB.
 
-## Setup
+# Setup
 
 1. Run `npm install`
 2. Copy `.env.example` to `.env` and fill in your values
 3. Run `npm run dev`
 
-## Endpoints
+# Endpoints
 
 | Method | Route | Access | Purpose |
 |---|---|---|---|

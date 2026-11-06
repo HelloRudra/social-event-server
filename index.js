@@ -7,7 +7,7 @@ import joinsRouter from "./routes/joins.js";
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors({ origin: process.env.CLIENT_URL.split(",") }));
+app.use(cors({ origin: process.env.CLIENT_URL.split(",").map((u) => u.trim().replace(/\/+$/, "")) }));
 app.use(express.json());
 
 app.get("/", (req, res) => res.send({ message: "Social Events API is running" }));
